@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.navigation {
+	background-color: #000;
+	/*background-color: rgba(0, 0, 0, 0.59);*/
+	position: fixed;
+	z-index: 900;
+	top: 0;
+	left: 0;
+	padding: 57px 0 66px;
+	right: 0;
+	text-align: center;
+}
+.navigation nav {
+	float: left;
+	color: #ffffff;
+}
+.navigation li {
+  display: inline-block;
+  padding-top: 5px;
+  font: 30px/40px 'Yanone Kaffeesatz', sans-serif;
+}
+.navigation li + li {
+  margin-left: 52px;
+}
+.navigation li a {
+  position: relative;
+}
+.navigation li a:after {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: absolute;
+  height: 5px;
+  top: 100%;
+  margin-top: 7px;
+  content: '';
+  left: 0;
+  right: 100%;
+  background-color: #FF0004;
+}
+.navigation li a:hover,
+.navigation li a.current {
+  color: inherit;
+}
+.navigation li a:hover:after,
+.navigation li a.current:after {
+  right: 0;
+}
