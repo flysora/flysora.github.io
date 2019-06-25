@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>MaryKay Contest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/myfavicon.ico">
+	
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/jquery.mb.YTPlayer.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+<!-- id="preloader" src="images/preloader.gif" alt="" />-->
+<!-- //PRELOADER -->
+<!-- //here starts scrolling icon -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling script -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling script -->
+	<!-- //here ends scrolling icon -->
+
+	<!-- scrolling script -->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //scrolling script --><div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<!--ref="index.html" ><span class="b1">w</span><span class="b2">h</span><span class="b3">i</span><span class="b4">t</span><span class="b5">e</span></a>-->
+						<a href="file:///H|/marykey/web/free-white/white-archive/html/video_slider/index.html" title="首页"> <!-- <i class="sprite_logo zh-cn"></i> --> <img src="images/logo/Mary-kay-logo-vector01.png" alt=""/></a>
+					</div><!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+				<!--	<div id="search-form" class="pull-right">
+						<form method="get" action="#">
+							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div>--><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" >首頁
+</a></li>
+								<li class="scroll_btn"><a href="#about" >百變粉美
+</a></li>
+								<li class="scroll_btn"><a href="#join" >我要參賽
+</a></li>
+								<li class="scroll_btn"><a href="#team" >我要票選粉美女人
+</a></li>
+								<li class="scroll_btn"><a href="#news" >粉美變身中獎名單
+</a></li>
+								<li class="scroll_btn last"><a href="#work" >我的作品
+</a></li>
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >關於mary kay
+</a>
+									<ul>
+										<li><a href="#contest" >賽程
+</a></li>
+										<li><a href="blog-post.html" >Blog Post</a></li>
+										<li><a href="portfolio-post.html" >Portfolio Single Work</a></li>
+									</ul>
+								</li>
+								<li class="scroll_btn last"><a href="#schedule" >賽程
+</a></li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+			
+			
+				<div class="caption">
+            <h1 class="animated fadeInLeftBig"> <span>玫琳凱”百變粉美”
+ 素人變身計畫</span></h1>
+            <p class="animated fadeInRightBig">
+</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">關注臉書賽事
+</a>
+          </div>
+				
+				<!-- VIDEO BACKGROUND -->
+              <a name="P2" class="player" id="P2" data-property="{videoURL:'https://www.youtube.com/watch?time_continue=5&v=7zrlDgZtRNQ',containment:'.top_slider',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+              <!-- //VIDEO BACKGROUND -->
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-350" data-animated="fadeInLeft">
+							<h2><b></b>百變粉美舞台，素人變身時尚美人！</h2>
+							<p>
+想要變身時尚網美嗎？<br/>
+想要時尚大師為你量身打造絕美造型嗎？<br/>
+想要成為玫琳凱產品代言人，<br/>
+登上雜誌封面嗎？<br/>
+在百變粉美舞台，這些都會成真！<br/>
+
+</p>
+							<p>1.線上票選前十名獲得<h7>“全套時尚大師專業彩妝造型”</h7><br/> 並拍攝絕美照片。（彩妝品及衣服可以帶回喔！）</p><p>
+2.可成為玫琳凱台灣區產品代言人，照片將刊登於台灣喝采或丰采
+							</p>
+							<!--<a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Yes I want it">Byu This theme</span></a>-->
+							<!--<a class="btn" href="javascript:void(0);" >View more templates</a>-->
+						</div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-350" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/02/IMG_0294.jpg" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div>
+			
+			<!-- //SERVICES -->
+			<section id="schedule">
+			
+			<!-- SERVICES -->
+			<div class="container">
+				
+					
+<!-- ROW -->
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12" data-appear-top-offset="-350" data-animated="fadeInLeft">
+					<h2><b></b>賽程</h2>
+			  <img src="images/05/工作區域 1.png" alt=""/> </div>
+</div>
+		</div>
+			
+			<!-- CLEAN CODE -->
+			<section id="join">
+			<div class="cleancode_block">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					<!-- CASTOM TAB -->
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active clearfix" id="tab1">
+							<p class="title"><h8>我要參賽
+</h8> </p>
+							<!--<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>-->
+						</div>
+						<!--<div class="tab-pane fade clearfix" id="tab2">
+							<p class="title"><b>Technical</b> Support</p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab3">
+							<p class="title"><b>Responsive</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab4">
+							<p class="title"><b>Documentation</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab5">
+							<p class="title"><b>Quality</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab6">
+							<p class="title"><b>Support</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
+						</div>-->
+					</div>
+					<!--<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Clean Code</span></a></li>
+						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Support</span></a></li>
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Responsive</span></a></li>
+						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Documentation</span></a></li>
+						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Quality</span></a></li>
+						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span>Support</span></a></li>
+					</ul>--><!-- CASTOM TAB -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //CLEAN CODE -->
+			
+			<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-5 col-md-5 col-sm-5" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><b></b> 讓她，
+在你手中，
+粉美綻放！</h2>
+							<p>
+</p>
+							<p>每個女人都期待一個變美的時刻，
+而你，就是那個仙度瑞拉的神仙教母，
+用專業，讓她綻放光彩</p>
+							<a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Yes I want it">美容顧問作品上傳
+								</span></a>
+							<h2><b></b> 我想，
+粉美綻放！
+</h2>
+							<p>
+</p>
+							<p>我想當個自信、美麗、勇敢
+的粉美女人！
+</p>
+							<a class="btn" href="javascript:void(0);" >尋找我的美容顧問
+</a>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-4 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/02/IMG_0225.jpg" alt="" />
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInUp">
+							<img class="ipad_img1" src="images/02/REX03978.JPG" alt="" />
+						</div>
+				  </div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<section id="work">
+			<div class="container">
+				<h2><b></b> 我的作品
+</h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0034.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0034.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0053.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0053.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0116.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0116.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0182.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0182.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0188.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0188.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work5 -->
+					
+					<!-- work6 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0190.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0190.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work6 -->
+					
+					<!-- work7 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/04/IMG_0225.jpg" alt="" />
+								<a class="zoom" href="images/04/IMG_0225.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >17 March, 2018</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work7 -->
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			
+		</section><!-- //PROJECTS -->
+		
+		
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b></b> 我要票選粉美女人
+</h2>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/03/IMG_1160.JPG" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Sarah Brown</p>
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/03/IMG_1245.JPG" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>David Jones</p>
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/03/IMG_1269.JPG" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Kate Smith</p>
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+						
+						<!-- crewman4 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/03/REX02704.JPG" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Peter Parker</p>
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman4 -->
+						
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/03/REX02724.JPG" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Jim Moss</p>
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman5 -->
+						
+						
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+		
+		
+		<!-- NEWS -->
+		
+		<section id="news">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><b></b> 粉美女人的
+奇幻變身時刻！
+</h2>
+							<p>懂得保養讓妳盡情展現女人自信魅力</br>
+每週抽一次”上傳照片“的美容顧問</br>或
+幸運參賽者，讓幸運魔法
+為你的美麗大大加分！
+</p>
+							
+							
+							<a class="btn" href="javascript:void(0);" >粉美女人中獎名單
+</a>
+						</div>
+						
+						<!--<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/05/444509-GB-009-HERO-BEAUTY-ALEXA-173.jpg" alt="" />
+						</div>-->
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+		</section><!-- //NEWS -->
+	</div><!-- //PAGE -->
+	
+<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				
+				
+				<div class="col-lg-6 col-md-6 col-sm-6 padbot30 foot_about_block">
+					<h4><b>關於我們</b> </h4>
+					<b>玫琳凱– 高品質產品,個人化專屬服務玫琳凱公司是全世界最大的肌膚保養和彩妝品公司之一，全球年營銷總額達35億美元；產品線包括臉部肌膚保養、彩妝品、營養品、 男士保養、身體保養、防曬、香水等200多種以上的商品。</b>
+					
+					<ul class="social">
+						<li><a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-6 col-md-6 padbot30">
+					<h4><b>聯絡我們</b> </h4>
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="姓名" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">訊息</textarea>
+								<input class="contact_btn" type="submit" value="Send message" />
+							</form>
+						</div>
+					</div><!-- //CONTACT FORM -->
+				</div>
+			</div><!-- //ROW -->
+		<!--	<div class="row copyright">
+				<div class="col-lg-12 text-center">
+				
+				 <p>Crafted with <i class="fa fa-heart"></i>, <a href="http://designscrazed.org/" >Designscrazed</a></p>
+				</div>
+			
+			</div>--><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer>
+	<!-- //FOOTER -->
+	
+		<!-- //here starts scrolling icon -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling script -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling script -->
+	<!-- //here ends scrolling icon -->
+
+	<!-- scrolling script -->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //scrolling script -->
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+<script src="js/wow.min.js"></script>
+
+</body>
+</html>
